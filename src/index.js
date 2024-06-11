@@ -4,13 +4,13 @@ addEventListener("fetch", (event) => {
 });
 
 const routes = {
-  "docker.bitdata.io": "https://registry-1.docker.io",
-  "quay.bitdata.io": "https://quay.io",
-  "gcr.bitdata.io": "https://gcr.io",
-  "k8s-gcr.bitdata.io": "https://k8s.gcr.io",
-  "k8s.bitdata.io": "https://registry.k8s.io",
-  "ghcr.bitdata.io": "https://ghcr.io",
-  "cloudsmith.bitdata.io": "https://docker.cloudsmith.io",
+  "docker.mirrors.bitdata.io": "https://registry-1.docker.io",
+  "quay.mirrors.bitdata.io": "https://quay.io",
+  "gcr.mirrors.bitdata.io": "https://gcr.io",
+  "k8s-gcr.mirrors.bitdata.io": "https://k8s.gcr.io",
+  "k8s.mirrors.bitdata.io": "https://registry.k8s.io",
+  "ghcr.mirrors.bitdata.io": "https://ghcr.io",
+  "cloudsmith.mirrors.bitdata.io": "https://docker.cloudsmith.io",
 };
 
 function routeByHosts(host) {
