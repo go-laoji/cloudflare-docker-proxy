@@ -106,6 +106,7 @@ async function handleRequest(request) {
   }
   // foward requests
   const newUrl = new URL(upstream + url.pathname);
+  console.log(request.headers);
   const newReq = new Request(newUrl, {
     method: request.method,
     headers: request.headers,
