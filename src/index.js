@@ -44,7 +44,11 @@ async function handleRequest(request) {
     );
   }
   const isDockerHub = upstream == dockerHub;
-  const authorization = request.headers.get("Authorization");
+  let authorization = request.headers.get("Authorization");
+  if (!authorization) {
+    authorization = request.headers.get("authorization");
+  }
+  
   if (url.pathname == "/v2/") {
     const newUrl = new URL(upstream + "/v2/");
     const headers = new Headers();
