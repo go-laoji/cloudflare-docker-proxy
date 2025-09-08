@@ -7,12 +7,12 @@ port = 8787
 local_protocol = "http"
 
 [env.vars]
-CUSTOM_DOMAIN = "mirrors.wecom.dev"
+CUSTOM_DOMAIN = "mirrors.libcuda.so"
 
 [env.dev.vars]
 MODE = "debug"
 TARGET_UPSTREAM = "https://registry-1.docker.io"
-CUSTOM_DOMAIN = "mirrors.wecom.dev"
+CUSTOM_DOMAIN = "mirrors.libcuda.so"
 
 [env.production]
 name = "cloudflare-docker-proxy"
